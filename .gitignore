@@ -1,3 +1,5 @@
 data/archive.zip
 data/stroke_raw.csv
 tags
+notebooks/.ipynb_checkpoints/
+notebooks/helper/__pycache__/
