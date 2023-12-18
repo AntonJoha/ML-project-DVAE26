@@ -5,7 +5,8 @@ import numpy as np
 def data_from_file(file: str):
     df = pd.read_csv(file)
     df = df.drop("id", axis=1)
-    df.replace("Unknown", np.NaN)
+    df = df.replace("Unknown", np.NaN)
+    df = df.replace("N/A", np.NaN)
     return df
 
 if __name__ == "__main__":
